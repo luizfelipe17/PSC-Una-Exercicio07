@@ -8,9 +8,7 @@ import java.util.Random;
 public class Questao02 {
 
     public static void main(String[] args) {
-
-        Scanner ler = new Scanner(System.in);
-
+        
         int[][] matriz = new int[3][3];
         int[] somas = new int[5];
 
@@ -21,7 +19,7 @@ public class Questao02 {
 
                 for (int j = 0; j < matriz.length; j++) {
 
-                    matriz[i][j] = ler.nextInt();
+                    matriz[i][j] = aleatorio.nextInt(10);
                     somas[j] += matriz[i][j];
 
                 }
